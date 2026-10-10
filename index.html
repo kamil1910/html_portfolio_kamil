@@ -1,34 +1,268 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    <h1>This is my Portfolio</h1>
-    <h2>I am great webdeveloper</h2>
-    <hr>
-    <h3><a href="./public/movie-ranking.html">My Movie ranking</a></h3>
-    <img src="./assets/images/movie-ranking.png" height="200"> 
-    <h3><a href="./public/birthday-invite.html">Birthday Movie project</a></h3>
-    <img src="./assets/images/birthday-invite.png" height="200" alt="">
-    <hr>
-    <a href="./public/contact.html">Contact Me</a>  
-    <a href="./public/about.html">About Me</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hamda & Fatima Deaf Academy is a nurturing school community where deaf and hard-of-hearing learners thrive through inclusive education, ASL, and joyful support."
+    />
+    <title>Hamda & Fatima Deaf Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <div class="brand" aria-label="Hamda & Fatima Deaf Academy home">
+          <div class="brand-mark">HF</div>
+          <div>
+            <p class="brand-name">Hamda & Fatima</p>
+            <p class="brand-subtitle">Deaf Academy</p>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#approach">Approach</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary nav-cta" href="#contact">Enroll Today</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Inclusive • Empowering • Caring</span>
+            <h1>A joyful place where every child can learn, connect, and shine.</h1>
+            <p>
+              Hamda & Fatima Deaf Academy provides a safe, language-rich environment where deaf
+              and hard-of-hearing learners build confidence, literacy, and lifelong skills
+              through American Sign Language, strong academics, and compassionate support.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Apply for Admission</a>
+              <a class="btn btn-secondary" href="#programs">Explore Programs</a>
+            </div>
+            <ul class="hero-points" aria-label="School highlights">
+              <li>ASL-first learning</li>
+              <li>Small class support</li>
+              <li>Whole-child development</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="visual-card card-main">
+              <div class="badge">Excellent learning</div>
+              <div class="stat-block">
+                <strong>96%</strong>
+                <span>student confidence growth</span>
+              </div>
+            </div>
+            <div class="visual-card card-floating">
+              <div class="mini-graph" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>Language and literacy support</p>
+            </div>
+            <div class="visual-card card-sun" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container stats-grid">
+          <div class="stat-item reveal">
+            <strong>200+</strong>
+            <span>Students supported</span>
+          </div>
+          <div class="stat-item reveal">
+            <strong>18:1</strong>
+            <span>Student-to-teacher guidance</span>
+          </div>
+          <div class="stat-item reveal">
+            <strong>25+</strong>
+            <span>Specialist programs</span>
+          </div>
+          <div class="stat-item reveal">
+            <strong>100%</strong>
+            <span>Inclusive, family-centered care</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container intro">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Our school</span>
+            <h2>Where every learner is seen, heard, and valued.</h2>
+          </div>
+          <div class="content-grid">
+            <div class="about-copy reveal">
+              <p>
+                We believe that deaf children deserve a rich learning environment that honors
+                communication, identity, and achievement. Our educators combine high academic
+                expectations with warm, individualized support so students can thrive socially,
+                emotionally, and academically.
+              </p>
+              <p>
+                From early childhood education through middle years, we build foundations in
+                communication, literacy, social-emotional learning, and confidence for a life
+                of participation and success.
+              </p>
+            </div>
+            <div class="feature-panel reveal">
+              <div class="panel-item">
+                <span>✓</span>
+                <div>
+                  <h3>ASL-rich instruction</h3>
+                  <p>Communication and confidence grow through everyday language immersion.</p>
+                </div>
+              </div>
+              <div class="panel-item">
+                <span>✓</span>
+                <div>
+                  <h3>Inclusive support</h3>
+                  <p>Students receive individualized coaching, therapy, and social guidance.</p>
+                </div>
+              </div>
+              <div class="panel-item">
+                <span>✓</span>
+                <div>
+                  <h3>Future-ready skills</h3>
+                  <p>We prepare learners for school success, independence, and community life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Programs</span>
+            <h2>Learning designed around each child’s strengths.</h2>
+          </div>
+
+          <div class="cards-grid">
+            <article class="card reveal">
+              <div class="card-icon">🎓</div>
+              <h3>Early Learning</h3>
+              <p>Play-based learning, language development, and early communication foundations.</p>
+            </article>
+            <article class="card reveal">
+              <div class="card-icon">📚</div>
+              <h3>Primary Education</h3>
+              <p>Strong literacy, numeracy, STEM, and expressive language support in small groups.</p>
+            </article>
+            <article class="card reveal">
+              <div class="card-icon">💡</div>
+              <h3>Life & Career Skills</h3>
+              <p>Practical communication, independence, technology, and future preparation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" class="section approach">
+        <div class="container approach-grid">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Our approach</span>
+            <h2>Learning that feels safe, expressive, and joyful.</h2>
+          </div>
+
+          <div class="timeline reveal">
+            <div class="timeline-item">
+              <span class="step">01</span>
+              <div>
+                <h3>Whole-child care</h3>
+                <p>We nurture communication, confidence, identity, and belonging every day.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="step">02</span>
+              <div>
+                <h3>Family partnership</h3>
+                <p>Families are active partners in planning, communication, and progress.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="step">03</span>
+              <div>
+                <h3>Inclusive community</h3>
+                <p>Students learn alongside peers in a welcoming environment that celebrates difference.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial-section">
+        <div class="container testimonial reveal">
+          <p>
+            “Our daughter feels seen, confident, and proud to express herself at school. The staff
+            have created a place where she can truly thrive.”
+          </p>
+          <span>— Parent of a Hamda & Fatima student</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <span class="eyebrow">Contact us</span>
+            <h2>Let’s help your child begin a bright new chapter.</h2>
+            <ul>
+              <li>📍 24 Horizon Avenue, Maple Grove</li>
+              <li>📞 (555) 219-8401</li>
+              <li>✉️ hello@hamdadeafacademy.org</li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <label>
+              Parent / Guardian Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us about your child..." required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            <p class="form-success" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Hamda & Fatima Deaf Academy</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
